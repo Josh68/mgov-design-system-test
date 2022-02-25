@@ -1,6 +1,7 @@
 import { ChoiceProps } from "@cmsgov/design-system/dist/types/ChoiceList/ChoiceList";
 import { Accordion, AccordionItem, ChoiceList } from "@cmsgov/ds-medicare-gov";
 import React, { ChangeEvent } from "react";
+import { ChoicesHelpDrawer } from "../components/ChoiceHelpDrawer";
 
 export const Choices: React.FC = () => {
   const [radioDefault, setRadioDefault] = React.useState(true);
@@ -31,6 +32,7 @@ export const Choices: React.FC = () => {
       value: "false",
     },
   ];
+
   const choices: ChoiceProps[] = [
     {
       label: "Some label",
@@ -41,6 +43,7 @@ export const Choices: React.FC = () => {
           name="nestedChoices"
           label="My Nested Choices"
           type="checkbox"
+          hint={<ChoicesHelpDrawer />}
           onChange={onNestedChoiceChange}
           choices={nestedChoices}
         />
