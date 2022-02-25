@@ -1,5 +1,5 @@
 import { ChoiceProps } from "@cmsgov/design-system/dist/types/ChoiceList/ChoiceList";
-import { ChoiceList } from "@cmsgov/ds-medicare-gov";
+import { Accordion, AccordionItem, ChoiceList } from "@cmsgov/ds-medicare-gov";
 import React, { ChangeEvent } from "react";
 
 export const Choices: React.FC = () => {
@@ -62,12 +62,18 @@ export const Choices: React.FC = () => {
     },
   ];
   return (
-    <ChoiceList
-      name="choices"
-      label="My Choices"
-      type="radio"
-      onChange={onRadioChange}
-      choices={choices}
-    />
+    <>
+      <Accordion>
+        <AccordionItem heading="See some choices" defaultOpen={false}>
+          <ChoiceList
+            name="choices"
+            label="My Choices"
+            type="radio"
+            onChange={onRadioChange}
+            choices={choices}
+          />
+        </AccordionItem>
+      </Accordion>
+    </>
   );
 };
