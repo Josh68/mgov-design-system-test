@@ -11,3 +11,7 @@
 - Open the drawer, then close the drawer, then re-open it
   - Note all of the contents of the drawer are read
   - This may happen the first time you open the drawer, also
+
+## GH Pages
+
+- Deployed currently to https://josh68.github.io/mgov-design-system-test
