@@ -5,12 +5,10 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ command }) => {
   const defaultConf = {
     plugins: [react()],
-    define: { global: {} },
-    base: "/ds-medicare-gov/",
   };
   if (command === "serve") {
-    return { ...defaultConf, server: { port: 3002 } };
+    return { ...defaultConf, server: { port: 3002 }, define: { global: {} } };
   } else {
-    return defaultConf;
+    return { ...defaultConf, base: "/mgov-design-system-test/" };
   }
 });
