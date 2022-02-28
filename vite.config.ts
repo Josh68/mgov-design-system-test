@@ -6,6 +6,7 @@ export default defineConfig(({ command }) => {
   const defaultConf = {
     plugins: [react()],
     define: { global: {} },
+    base: "/ds-medicare-gov/",
   };
   if (command === "serve") {
     return { ...defaultConf, server: { port: 3002 } };

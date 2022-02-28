@@ -4,7 +4,7 @@
 
 - Install the app with `npm i`
 - Start the app with `npm start`
-- In Safari, visit 127.0.0.1:3002/choices
+- In Safari, visit 127.0.0.1:3002
 - Turn on VO
 - Open the accordion
   - Note the excessive reading of choice labels
