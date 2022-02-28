@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "clean": "npx rimraf dist -y",
     "preview": "vite preview",
     "start": "vite"
   },
