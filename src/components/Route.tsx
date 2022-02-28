@@ -1,6 +1,5 @@
 import { Alert } from "@cmsgov/ds-medicare-gov";
 import React, { ReactElement } from "react";
-import App from "../App";
 import { Layout } from "../layout";
 
 const Route: React.FC<{
