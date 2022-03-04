@@ -15,5 +15,5 @@
 ## GH Pages
 
 - Deployed currently to https://josh68.github.io/mgov-design-system-test
-- In root `./deploy.sh`
+- In root, modify and then use `./deploy.sh`
 - May need to delete existing gh-pages branch (look into this later)
