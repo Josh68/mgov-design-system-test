@@ -9,18 +9,13 @@ const Route: React.FC<{
   path: string;
   title?: string;
   children: ReactElement<any, any>;
-}> = ({ path, children, title = "Test page" }) => (
-  <Layout>
-    {pathName === path ? (
-      <>
-        {" "}
-        <h1>{title}</h1>
-        <div>{children}</div>
-      </>
-    ) : (
-      <Alert>There's nothing here</Alert>
-    )}
-  </Layout>
-);
+}> = ({ path, children, title = "Test page" }) => {
+  return pathName === path ? (
+    <Layout>
+      <h1>{title}</h1>
+      <div>{children}</div>
+    </Layout>
+  ) : null;
+};
 
 export default Route;
